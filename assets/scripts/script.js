@@ -2,8 +2,13 @@ const slider = document.querySelectorAll("#slider>div");
 const  prev= document.querySelector("#next");
 const next = document.querySelector("#prev");
 const indicator = document.querySelector(".indicator");
+const skeltonOne = document.querySelectorAll(".skelton");
 
-
+window.addEventListener('load' , ()=>{
+  skeltonOne.forEach(items =>{
+   items.classList.remove('skelton')
+  })
+})
 let flag = 0;
 let x = 0;
 let sliderLenght = slider.length;
